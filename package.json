@@ -1,0 +1,27 @@
+{
+  "name": "ai-carrer-adviser",
+  "version": "1.0.0",
+  "description": "ai carrer adviser forntend working is going on by rishab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecrypt-team/ai-carrer-adviser.git"
+  },
+  "keywords": [
+    "ai"
+  ],
+  "author": "rishab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codecrypt-team/ai-carrer-adviser/issues"
+  },
+  "homepage": "https://github.com/codecrypt-team/ai-carrer-adviser#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
