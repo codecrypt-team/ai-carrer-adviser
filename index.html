@@ -7,23 +7,88 @@
 </head>
 <body class="">
   <nav>
-    <ul class="list-none flex gap-4 top-0 left-0 right-0 text-2xl justify-between p-3 bg-blue-200 dark:bg-emerald-950 dark:text-amber-50 text-black">
-      <li>Dark/light toggle</li>
-      <li>user avatar</li>
-      <li>logout</li>
-      <li>About us</li>
-      <li>Download</li>
-      <li>More</li>
+    <ul class="list-none flex gap-4 top-0 left-0 right-0 justify-end p-3 bg-gray-700 text-white">
+     <div class="flex mr-3 gap-4 my-4">
+
+      <div class="flex gap-1.5">
+       <li>Dark Mode</li>
+       <li><img src="./src/images/dark_mode.svg" alt=""></li>
+      </div>
+
+      <li><img src="./src/images/account_circle.svg" alt=""></li>
+      <li><img src="./src/images/exit_to_app.svg" alt=""></li>
+      
+     </div>
     </ul>
   </nav>
-  <div class="sidebar">
-    <ul>
+
+
+  <div class="sidebar fixed p-4 bg-gray-900 text-white top-0 bottom-0 left-0">
+    <ul class="flex-col m-2">
+
+      <div class="text-2xl mt-4 pr-6">
+        App Dashboard
+      </div>
+
+      <div class="flex gap-2 mt-9 pr-3.5">
+      <li><img src="./src/images/dashboard.svg" alt=""></li>
       <li>Dashboard</li>
+      </div>
+
+      <div class="flex gap-2 mt-5 pr-3.5">
+      <li><img src="./src/images/chat.svg" alt=""></li>
       <li>Chat</li>
+      </div>
+     
+      <div class="flex gap-2 mt-5 pr-3.5">
+      <li><img src="./src/images/check_box.svg" alt=""></li>
       <li>To-Do</li>
+      </div>
+
+      <div class="flex gap-2 mt-5 pr-3.5">
+      <li><img src="./src/images/flowchart.svg" alt=""></li>
       <li>Flowchart</li>
+      </div>
+
+      <div class="flex gap-2 mt-5 pr-3.5">
+      <li><img src="./src/images/person.svg" alt=""></li>
       <li>Profile</li>
+      </div>
+
     </ul>
+
+  </div>
+
+  <div class="ml-56 chat-section">
+
+    <div class="chat-header px-4 py-4 flex gap-2 border-[0.5px] items-center border-gray-600">
+      <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+      <p>Chat With Doraemon Your personal Ai carrer Advisor and guide</p>
+    </div>
+
+    <div class="chats p-5">
+
+      <div class="gemni-chat flex flex-col gap-2">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+      <p class="bg-gray-200 w-fit p-3 ml-5">Chat With Doraemon Your personal Ai carrer Advisor and guide</p>
+      </div>
+
+      <div class="user-chat"></div>
+
+    </div>
+
+
+
+
+    <div class="message-bar border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-60 py-4 px-4">
+      
+      <div>
+        <input type="text" placeholder="Type your message..." class="w-full rounded-sm p-3">
+      </div>
+         
+    </div>
+
   </div>
 </body>
 </html>
