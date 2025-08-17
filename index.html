@@ -5,25 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="">
-  <nav>
-    <ul class="list-none flex gap-4 top-0 left-0 right-0 justify-end p-3 bg-gray-700 text-white">
-     <div class="flex mr-3 gap-4 my-4">
-
-      <div class="flex gap-1.5">
-       <li>Dark Mode</li>
-       <li><img src="./src/images/dark_mode.svg" alt=""></li>
-      </div>
-
-      <li><img src="./src/images/account_circle.svg" alt=""></li>
-      <li><img src="./src/images/exit_to_app.svg" alt=""></li>
-      
-     </div>
-    </ul>
-  </nav>
+<body class="flex min-h-screen">
 
 
-  <div class="sidebar fixed p-4 bg-gray-900 text-white top-0 bottom-0 left-0">
+
+   <div class="w-[15%]">
+  <div class="sidebar p-4 bg-gray-600 text-white left-0 right-[85%] h-full fixed">
     <ul class="flex-col m-2">
 
       <div class="text-2xl mt-4 pr-6">
@@ -58,37 +45,122 @@
     </ul>
 
   </div>
+  </div>
 
-  <div class="ml-56 chat-section">
+    <div class="w-[85%]">
+    <nav class="fixed top-0 left-[15%] right-0 z-10">
+    <ul class="list-none flex gap-4 top-0 left-0 right-0 justify-end p-3 bg-gray-700 text-white">
+     <div class="flex mr-3 gap-4 my-4">
+
+      <div class="flex gap-1.5">
+       <li>Dark Mode</li>
+       <li><img src="./src/images/dark_mode.svg" alt=""></li>
+      </div>
+
+      <li><img src="./src/images/account_circle.svg" alt=""></li>
+      <li><img src="./src/images/exit_to_app.svg" alt=""></li>
+      
+     </div>
+    </ul>
+  </nav>
+
+  <div class="chat-section bg-gray-500 pt-[80px] pb-28 h-full">
 
     <div class="chat-header px-4 py-4 flex gap-2 border-[0.5px] items-center border-gray-600">
       <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
       <p>Chat With Doraemon Your personal Ai carrer Advisor and guide</p>
     </div>
 
-    <div class="chats p-5">
 
-      <div class="gemni-chat flex flex-col gap-2">
+    <div class="chats p-5 flex-col gap-5 h-full">
+
+     <div class="flex justify-start gemni-chat-parent">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
         <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
 
-      <p class="bg-gray-200 w-fit p-3 ml-5">Chat With Doraemon Your personal Ai carrer Advisor and guide</p>
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div>
+      
+
+      <div class="flex justify-end user-chat-parent">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">You can't help me ding-ding...</p>
+
+       </div>
       </div>
 
-      <div class="user-chat"></div>
+       <div class="flex justify-start gemni-chat-parent">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
 
-    </div>
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div> 
+
+      <div class="flex justify-end user-chat-parent">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">You can't help me ding-ding...</p>
+
+       </div>
+      </div>
+
+       <div class="flex justify-start gemni-chat-parent">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div> 
+
+     <div class="flex justify-end user-chat-parent">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">You can't help me ding-ding...</p>
+
+       </div>
+      </div>
+
+       <div class="flex justify-start gemni-chat-parent">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div> 
+
+     <div class="flex justify-end user-chat-parent">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-xl rounded-tr-xl">fuck off man ding-ding...</p>
+
+       </div>
+      </div>
+
+
+
+     </div> <!-- chats end -->
 
 
 
 
-    <div class="message-bar border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-60 py-4 px-4">
+    <div class="message-bar border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-[15%] py-4 px-4 z-10 bg-gray-500">
       
       <div>
-        <input type="text" placeholder="Type your message..." class="w-full rounded-sm p-3">
+        <input type="text" placeholder="Type your message..." class="w-full rounded-sm p-3 bg-gray-400">
       </div>
          
     </div>
 
-  </div>
+  </div>  <!-- chats section ends -->
+
+
+  </div>   <!-- 85% div ends -->
 </body>
 </html>
