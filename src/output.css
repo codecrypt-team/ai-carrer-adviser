@@ -23,6 +23,7 @@
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-gray-950: oklch(13% 0.028 261.692);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
@@ -475,8 +476,14 @@
     border-style: var(--tw-border-style);
     border-width: 0.5px;
   }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
+  }
   .border-gray-600 {
     border-color: var(--color-gray-600);
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
@@ -910,6 +917,33 @@
   .xl\:pl-1\.5 {
     @media (width >= 80rem) {
       padding-left: calc(var(--spacing) * 1.5);
+    }
+  }
+  .dark\:border {
+    &:where(.dark, .dark *) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .dark\:border-\[0\.5px\] {
+    &:where(.dark, .dark *) {
+      border-style: var(--tw-border-style);
+      border-width: 0.5px;
+    }
+  }
+  .dark\:bg-black {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-black);
+    }
+  }
+  .dark\:bg-gray-600 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-600);
+    }
+  }
+  .dark\:text-gray-50 {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-50);
     }
   }
 }
