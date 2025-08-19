@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <title>Dashboard</title>
 </head>
 <body class="flex min-h-screen">
 
@@ -75,102 +76,166 @@
      <span>joined on 19th August 2025</span>
   </div>
 
-  <div class="chat-section bg-gray-500 dark:bg-black sm:pt-[80px] sm:pb-28 h-full pb-33">
+  <div class="main-dashboard w-[100%] bg-gray-500 min-h-screen pt-20 flex flex-col">
 
-    <div class="chat-header sm:px-4 sm:py-4 px-2 py-2 text-sm text-gray-300 flex gap-2 border-[0.5px] items-center border-gray-600">
-      <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
-      <p>Chat With Doraemon Your personal Ai carrer Advisor and guide</p>
+    <div class="welcome-bar border-gray-600 border-[0.5px] p-4 w-[100%]">
+      <div class="flex gap-4">
+      <div>
+        <img src="./src/images/ninja-hattori.jpeg" alt="" class="w-12 h-12 rounded-full">
+      </div>
+         <div class="text-gray-50">
+           <div class="text-2xl font-medium">
+          Welcome back, Ninja Hattori👋
+            </div>
+            <div class="text-gray-300">
+          You're 35% on your roadmap to <span class="font-medium text-gray-50">Web Developer</span> and Get a <span class="font-medium text-gray-50">Job.</span>
+            </div>
+         </div>
+            </div>
     </div>
 
 
-    <div class="chats sm:p-5 flex-col h-full p-3">
+    <div class="flex w-full">
+          <div class="left-dashboard w-[57%] m-4 text-gray-50">
 
-     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
-      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
-        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+            <div class="carrer-project-overview w-full border-[0.5px] border-gray-600 rounded-4xl p-4">
 
-        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
-      </div>
-     </div>
+              <div class="flex gap-3">
+                <span>
+                  <img src="./src/images/target.svg" alt="">
+                </span>
+                <span>
+                  Career Progress Overview
+                </span>
+              </div>
+
+              <div class="mt-8 w-full">
+                <div class="flex justify-between">
+                  <div>
+                    Progress to Web Developer
+                  </div>
+                  <div>
+                    57%
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="outer-progress w-full bg-gray-700 rounded-xl h-4">
+                    <div class="inner-progress bg-gray-200 w-[57%] h-full rounded-xl">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mt-5 flex justify-between items-center">
+                <div>
+                <div class="text-gray-300">
+                  Currently working on:
+                </div>
+                <div>
+                  Learn JavaScript Basics
+                </div>
+                </div>
+
+                <div class="bg-gray-800 p-2 rounded-lg cursor-pointer hover:bg-gray-600">
+                   Next Step >
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="row1 flex mt-3.5 gap-3.5">
+              <div class="row1_1 flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-start">
+
+                <a href="#" class="flex gap-2">
+                  <div><img src="./src/images/chat.svg" alt="" class="bg-gray-700 rounded-md p-2"></div>
+                  <div class="flex flex-col">
+                    <span>Chat with Gemini</span>
+                    <span class="text-sm text-gray-300">Last conversation: 'Help me with React hooks'</span>
+                    <span class="bg-gray-600 rounded-md p-1 w-fit mt-2">3 new responses</span>
+                  </div>
+                </a>
+
+              </div>
+
+              <div class="row1_2 flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-start">
+
+                 <a href="#" class="flex gap-2">
+                  <div><img src="./src/images/check_box.svg" alt="" class="bg-gray-700 rounded-md p-2"></div>
+                  <div class="flex flex-col">
+                    <span>To-Do List</span>
+                    <span class="text-sm text-gray-300">To-Do List'</span>
+                    <span class="bg-gray-600 rounded-md p-1 w-fit mt-2">3 tasks due today</span>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="row2 flex mt-3.5 gap-3.5">
+              <div class="row2_1 flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-start">
+                 <a href="#" class="flex gap-2">
+                  <div><img src="./src/images/flowchart.svg" alt="" class="bg-gray-700 rounded-md p-2"></div>
+                  <div class="flex flex-col">
+                    <span>Roadmap</span>
+                    <span class="text-sm text-gray-300">Web Developer Path</span>
+                    <span class="bg-gray-600 rounded-md p-1 w-fit mt-2">View Progress</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="row2_2 flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-start">
+                 <a href="#" class="flex gap-2">
+                  <div><img src="./src/images/person.svg" alt="" class="bg-gray-700 rounded-md p-2"></div>
+                  <div class="flex flex-col">
+                    <span>Profile & Skill</span>
+                    <span class="text-sm text-gray-300">Skills: Python, HTML | Goal: Data Scientist'</span>
+                    <span class="bg-gray-600 rounded-md p-1 w-fit mt-2">Update skills</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex mt-3.5 gap-3">
+              <div class="flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-center justify-center gap-2 flex-col flex">
+
+                <img src="./src/images/fire.svg" alt="" class="w-14 h-14">
+                <span class="text-2xl font-bold">7 days</span>
+                <span class="text-sm text-gray-300">Current Streak</span>
+
+              </div>
+              <div class="flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-center justify-center gap-2 flex-col flex">
+                  <img src="./src/images/clock.svg" alt="" class="w-14 h-14">
+                <span class="text-2xl font-bold">5 hrs</span>
+                <span class="text-sm text-gray-300">learning this week</span>
+              </div>
+              <div class="flex-1 p-4 border-gray-600 rounded-4xl border-[0.5px] items-center justify-center gap-2 flex-col flex">
+                      <img src="./src/images/task-check.svg" alt="" class="w-14 h-14">
+                <span class="text-2xl font-bold">12/20</span>
+                <span class="text-sm text-gray-300">Goals Completed</span>
+              </div>
+            </div>
+
+          </div>
+
+    <div class="right-dashboard w-[37%] m-4">
       
-
-      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
-       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
-         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
-
-         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">You can't help me ding-ding...</p>
-
-       </div>
-      </div>
-     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
-      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
-        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
-
-        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
-      </div>
-     </div>
-      
-
-      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
-       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
-         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
-
-         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">You can't help me ding-ding...</p>
-
-       </div>
-      </div>
-     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
-      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
-        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
-
-        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
-      </div>
-     </div>
-      
-
-      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
-       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
-         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
-
-         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">You can't help me ding-ding...</p>
-
-       </div>
-      </div>
-     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
-      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
-        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
-
-        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
-      </div>
-     </div>
-      
-
-      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
-       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
-         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
-
-         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">Fuck off man ding-ding...</p>
-
-       </div>
-      </div>
-
-
-
-     </div> <!-- chats end -->
-
-
-
-
-    <div class="message-bar border-[0.5px] items-center border-gray-600 fixed sm:bottom-0 bottom-12 right-0 sm:left-[15%] left-0 sm:py-4 px-4 z-10 bg-gray-500 dark:bg-black py-1.5">
-      
-      <div class="relative">
-        <input type="text" placeholder="Type your message..." class="w-full rounded-sm sm:py-3 py-2 pl-3 pr-12 bg-gray-400 dark:bg-gray-600">
-        <img src="./src/images/arrow_upward.svg" alt="" class="absolute right-2 bottom-1.5 sm:bottom-2.5 cursor-pointer bg-gray-900 rounded-full p-1 hover:scale-125">
-      </div>
-         
     </div>
 
-  </div>  <!-- chats section ends -->
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
 
   <div class="border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-0 px-1 py-0.5 z-10 bg-gray-700 block dark:bg-black sm:hidden text-sm text-gray-50">
     <ul class="flex items-center">

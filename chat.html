@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Chats</title>
+</head>
+<body class="flex min-h-screen">
+
+
+
+   <div class="sm:w-[15%] w-[15%] hidden sm:block">
+  <div class="sidebar py-4 xl:p-4 bg-gray-600 text-gray-50 left-0 right-[85%] h-full fixed dark:bg-black dark:text-gray-50 dark:border-[0.5px] border-gray-600">
+    <ul class="flex-col xl:m-2 m-0.5">
+
+      <div class="md:text-2xl mt-4 pr-6 sm:text-xl text-lg font-mono font-extrabold tracking-wider uppercase">
+       <span class="bg-gradient-to-r from-cyan-400 to-green-600 bg-clip-text text-transparent">
+    Code-Crypt
+  </span>
+      </div>
+
+      <div class="sm:flex-col lg:flex-row flex gap-2 mt-9 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
+      <li><img src="./src/images/dashboard.svg" alt=""></li>
+      <li class=""><a href="dashboard.html">Dashboard</a></li>
+      </div>
+
+      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 bg-gray-700 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
+      <li><img src="./src/images/chat.svg" alt=""></li>
+      <li class=""><a href="chat.html">Chat</a></li>
+      </div>
+     
+      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
+      <li><img src="./src/images/check_box.svg" alt=""></li>
+      <li class=""><a href="todo.html">To-Do</a></li>
+      </div>
+
+      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:p-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
+      <li><img src="./src/images/flowchart.svg" alt=""></li>
+      <li class=""><a href="flowchart.html">Flowchart</a></li>
+      </div>
+
+      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-1.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
+      <li><img src="./src/images/person.svg" alt=""></li>
+      <li class=""><a href="profile.html">Profile</a></li>
+      </div>
+
+    </ul>
+
+  </div>
+  </div>
+
+    <div class="sm:w-[85%] w-[100%]">
+    <nav class="fixed top-0 left-[15%] right-0 z-10 hidden sm:block">
+    <ul class="list-none flex gap-4 top-0 left-0 right-0 justify-end p-3 bg-gray-700 dark:bg-black text-gray-50">
+     <div class="flex mr-3 gap-4 my-4">
+
+      <div class="flex gap-1.5 group cursor-pointer dark-button">
+       <li class="dark-mode-text">Dark Mode</li>
+       <li><img src="./src/images/dark_mode.svg" alt="" class="group-hover:scale-150 dark-mode-image"></li>
+      </div>
+
+      <li class="account-circle"><img src="./src/images/account_circle.svg" alt="" class="hover:scale-150 cursor-pointer" title="Account"></li>
+      <li><img src="./src/images/exit_to_app.svg" alt="" class="hover:scale-150 cursor-pointer" title="not-working"></li>
+      
+     </div>
+    </ul>
+  </nav>
+
+  <div class="account-floating-bar fixed text-gray-50 bg-gray-900 rounded-2xl z-20 w-fit h-fit p-4 flex justify-center items-center flex-col right-2 top-16 hidden">
+    log in with.
+    <div class="flex gap-2 items-center justify-center">
+     <img src="./src/images/ninja-hattori.jpeg" alt="" class="w-12 h-12 rounded-full object-cover">
+     <span>ninja@hattori.com</span>
+    </div>
+     <span>joined on 19th August 2025</span>
+  </div>
+
+  <div class="chat-section bg-gray-500 dark:bg-black sm:pt-[80px] sm:pb-28 h-full pb-33">
+
+    <div class="chat-header sm:px-4 sm:py-4 px-2 py-2 text-sm text-gray-300 flex gap-2 border-[0.5px] items-center border-gray-600">
+      <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+      <p>Chat With Doraemon Your personal Ai carrer Advisor and guide</p>
+    </div>
+
+
+    <div class="chats sm:p-5 flex-col h-full p-3">
+
+     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div>
+      
+
+      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">You can't help me ding-ding...</p>
+
+       </div>
+      </div>
+     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div>
+      
+
+      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">You can't help me ding-ding...</p>
+
+       </div>
+      </div>
+     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div>
+      
+
+      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">You can't help me ding-ding...</p>
+
+       </div>
+      </div>
+     <div class="flex justify-start gemni-chat-parent mr-2.5 sm:mr-0">
+      <div class="gemni-chat flex flex-col gap-2 max-w-2xl">
+        <img src="src/images/dora.webp" alt="" class="w-9 h-9 rounded-full object-cover">
+
+        <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tr-2xl text-gray-950">Hello, I am doraemon Your personal carrier guide and adviser how can i help you i just want to help you stay calm and breath and tell me what you want to know i know everyting just ask me,</p>
+      </div>
+     </div>
+      
+
+      <div class="flex justify-end user-chat-parent ml-2.5 sm:ml-0 mt-1.5">
+       <div class="user-chat flex flex-col gap-2 max-w-2xl items-end">
+         <img src="src/images/ninja-hattori.jpeg" alt="" class="w-9 h-9 rounded-full object-cover">
+
+         <p class="bg-gray-400 w-fit p-3 ml-5 rounded-b-2xl rounded-tl-2xl text-gray-950">Fuck off man ding-ding...</p>
+
+       </div>
+      </div>
+
+
+
+     </div> <!-- chats end -->
+
+
+
+
+    <div class="message-bar border-[0.5px] items-center border-gray-600 fixed sm:bottom-0 bottom-12 right-0 sm:left-[15%] left-0 sm:py-4 px-4 z-10 bg-gray-500 dark:bg-black py-1.5">
+      
+      <div class="relative">
+        <input type="text" placeholder="Type your message..." class="w-full rounded-sm sm:py-3 py-2 pl-3 pr-12 bg-gray-400 dark:bg-gray-600">
+        <img src="./src/images/arrow_upward.svg" alt="" class="absolute right-2 bottom-1.5 sm:bottom-2.5 cursor-pointer bg-gray-900 rounded-full p-1 hover:scale-125">
+      </div>
+         
+    </div>
+
+  </div>  <!-- chats section ends -->
+
+  <div class="border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-0 px-1 py-0.5 z-10 bg-gray-700 block dark:bg-black sm:hidden text-sm text-gray-50">
+    <ul class="flex items-center">
+      <li class="flex-1"><a href="./dashboard.html" class="flex flex-col justify-center items-center">
+        <img src="./src/images/dashboard.svg" alt="">
+        <div>Dashboard</div>
+      </a></li>
+      <li class="flex-1 bg-gray-500 py-0.5"><a href="./chat.html" class="flex flex-col justify-center items-center">
+         <img src="./src/images/chat.svg" alt="">
+         <div>Chat</div>
+      </a></li>
+      <li class="flex-1"><a href="./todo.html" class="flex flex-col justify-center items-center">
+         <img src="./src/images/check_box.svg" alt="">
+         <div>To-Do</div>
+      </a></li>
+      <li class="flex-1"><a href="./flowchart.html" class="flex flex-col justify-center items-center">
+         <img src="./src/images/flowchart.svg" alt="">
+         <div>Flowchart</div>
+      </a></li>
+      <li class="flex-1"><a href="./profile.html" class="flex flex-col justify-center items-center">
+          <img src="./src/images/person.svg" alt="">
+          <div>More</div>
+      </a></li>
+    </ul> 
+  </div> <!-- lower-nav-bar -->
+
+
+  </div>   <!-- 85% div ends -->
+
+
+  <script src="./src/account-pannel.js"></script>
+  <script src="./src/chat.js"></script>
+</body>
+</html>
