@@ -191,12 +191,28 @@
          <img src="./src/images/flowchart.svg" alt="">
          <div>Flowchart</div>
       </a></li>
-      <li class="flex-1"><a href="./profile.html" class="flex flex-col justify-center items-center">
+      <li class="flex-1 button-sidebar cursor-pointer"><div href="./profile.html" class="flex flex-col justify-center items-center">
           <img src="./src/images/person.svg" alt="">
           <div>More</div>
-      </a></li>
+      </div></li>
     </ul> 
   </div> <!-- lower-nav-bar -->
+
+  <div class="mobile-user-bar fixed right-2 bottom-16 left-36 h-32 bg-gray-900 z-40 rounded-3xl p-4 flex flex-col gap-3.5 md:hidden hidden">
+
+    <div>
+      <a href="./src/profile.html" class="flex gap-3 text-gray-50">
+        <img src="./src/images/person.svg" alt="">
+        <span>Profile</span>
+      </a>
+      
+    </div>
+    <div class="flex gap-3 text-gray-50 mob-dark-btn">
+      <img src="./src/images/dark_mode.svg" alt="" class="mob-dark-img">
+      <span class="mob-dark-txt">Dark Mode</span>
+    </div>
+
+  </div>
 
 
   </div>   <!-- 85% div ends -->
