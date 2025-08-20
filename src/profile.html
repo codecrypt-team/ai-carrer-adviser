@@ -1,233 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <title>To-Do</title>
-</head>
-<body class="flex min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Profile</title>
+  </head>
+  <body class="flex min-h-screen">
+    <div class="sm:w-[15%] w-[15%] hidden sm:block">
+      <div
+        class="sidebar py-4 xl:p-4 bg-gray-600 text-gray-50 left-0 right-[85%] h-full fixed dark:bg-black dark:text-gray-50 dark:border-[0.5px] border-gray-600"
+      >
+        <ul class="flex-col xl:m-2 m-0.5">
+          <div
+            class="md:text-2xl mt-4 pr-6 sm:text-xl text-lg font-mono font-extrabold tracking-wider uppercase"
+          >
+            <span
+              class="bg-gradient-to-r from-cyan-400 to-green-600 bg-clip-text text-transparent"
+            >
+              Code-Crypt
+            </span>
+          </div>
 
+          <div
+            class="sm:flex-col lg:flex-row flex gap-2 mt-9 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch"
+          >
+            <li><img src="./images/dashboard.svg" alt="" /></li>
+            <li class=""><a href="../index.html">Dashboard</a></li>
+          </div>
 
+          <div
+            class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch"
+          >
+            <li><img src="./images/chat.svg" alt="" /></li>
+            <li class=""><a href="../chat.html">Chat</a></li>
+          </div>
 
-   <div class="sm:w-[15%] w-[15%] hidden sm:block">
-  <div class="sidebar py-4 xl:p-4 bg-gray-600 text-gray-50 left-0 right-[85%] h-full fixed dark:bg-black dark:text-gray-50 dark:border-[0.5px] border-gray-600">
-    <ul class="flex-col xl:m-2 m-0.5">
+          <div
+            class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch"
+          >
+            <li><img src="./images/check_box.svg" alt="" /></li>
+            <li class=""><a href="./todo.html">To-Do</a></li>
+          </div>
 
-      <div class="md:text-2xl mt-4 pr-6 sm:text-xl text-lg font-mono font-extrabold tracking-wider uppercase">
-       <span class="bg-gradient-to-r from-cyan-400 to-green-600 bg-clip-text text-transparent">
-    Code-Crypt
-  </span>
+          <div
+            class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:p-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch"
+          >
+            <li><img src="./images/flowchart.svg" alt="" /></li>
+            <li class=""><a href="./flowchart.html">Flowchart</a></li>
+          </div>
+
+          <div
+            class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-1.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch bg-gray-700"
+          >
+            <li><img src="./images/person.svg" alt="" /></li>
+            <li class=""><a href="./profile.html">Profile</a></li>
+          </div>
+        </ul>
       </div>
-
-      <div class="sm:flex-col lg:flex-row flex gap-2 mt-9 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
-      <li><img src="./images/dashboard.svg" alt=""></li>
-      <li class=""><a href="../index.html">Dashboard</a></li>
-      </div>
-
-      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
-      <li><img src="./images/chat.svg" alt=""></li>
-      <li class=""><a href="../chat.html">Chat</a></li>
-      </div>
-     
-      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch bg-gray-700">
-      <li><img src="./images/check_box.svg" alt=""></li>
-      <li class=""><a href="./todo.html">To-Do</a></li>
-      </div>
-
-      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:p-0.5 lg:pl-0.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
-      <li><img src="./images/flowchart.svg" alt=""></li>
-      <li class=""><a href="./flowchart.html">Flowchart</a></li>
-      </div>
-
-      <div class="sm:flex-col lg:flex-row flex gap-2 mt-5 xl:pr-3.5 py-1.5 xl:pl-1.5 lg:pr-0.5 lg:pl-1.5 hover:bg-gray-500 rounded-3xl cursor-pointer sm:items-center lg:items-stretch">
-      <li><img src="./images/person.svg" alt=""></li>
-      <li class=""><a href="./profile.html">Profile</a></li>
-      </div>
-
-    </ul>
-
-  </div>
-  </div>
+    </div>
 
     <div class="sm:w-[85%] w-[100%] bg-gray-500">
-    <nav class="fixed top-0 left-[15%] right-0 z-10 hidden sm:block">
-    <ul class="list-none flex gap-4 top-0 left-0 right-0 justify-end p-3 bg-gray-700 dark:bg-black text-gray-50">
-     <div class="flex mr-3 gap-4 my-4">
+      <nav class="fixed top-0 left-[15%] right-0 z-10 hidden sm:block">
+        <ul
+          class="list-none flex gap-4 top-0 left-0 right-0 justify-end p-3 bg-gray-700 dark:bg-black text-gray-50"
+        >
+          <div class="flex mr-3 gap-4 my-4">
+            <div class="flex gap-1.5 group cursor-pointer dark-button">
+              <li class="dark-mode-text">Dark Mode</li>
+              <li>
+                <img
+                  src="./images/dark_mode.svg"
+                  alt=""
+                  class="group-hover:scale-150 dark-mode-image"
+                />
+              </li>
+            </div>
 
-      <div class="flex gap-1.5 group cursor-pointer dark-button">
-       <li class="dark-mode-text">Dark Mode</li>
-       <li><img src="./images/dark_mode.svg" alt="" class="group-hover:scale-150 dark-mode-image"></li>
+            <li class="account-circle">
+              <img
+                src="./images/account_circle.svg"
+                alt=""
+                class="hover:scale-150 cursor-pointer"
+                title="Account"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/exit_to_app.svg"
+                alt=""
+                class="hover:scale-150 cursor-pointer"
+                title="not-working"
+              />
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div
+        class="account-floating-bar fixed text-gray-50 bg-gray-900 rounded-2xl z-20 w-fit h-fit p-4 flex justify-center items-center flex-col right-2 top-16 hidden"
+      >
+        log in with.
+        <div class="flex gap-2 items-center justify-center">
+          <img
+            src="./images/ninja-hattori.jpeg"
+            alt=""
+            class="w-12 h-12 rounded-full object-cover"
+          />
+          <span>ninja@hattori.com</span>
+        </div>
+        <span>joined on 19th August 2025</span>
       </div>
 
-      <li class="account-circle"><img src="./images/account_circle.svg" alt="" class="hover:scale-150 cursor-pointer" title="Account"></li>
-      <li><img src="./images/exit_to_app.svg" alt="" class="hover:scale-150 cursor-pointer" title="not-working"></li>
-      
-     </div>
-    </ul>
-  </nav>
+      <div
+        class="profile-section bg-gray-500 dark:bg-black sm:pt-[80px] sm:pb-28 h-full pb-33 text-gray-50">
+        <div
+          class="account-bar border-gray-600 border-[0.5px] p-4 w-[100%] flex justify-between items-center"
+        >
+          <div class="flex gap-4">
+            <div>
+              <img
+                src="./images/ninja-hattori.jpeg"
+                alt=""
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div class="text-gray-50">
+              <div class="md:text-2xl font-medium text-xl">Ninja Hattori👋</div>
+              <div class="text-gray-300">
+                <span class="font-medium text-gray-50">Goal:</span>
+                <span>Full-Stack Web Developer</span>
+              </div>
+            </div>
+          </div>
 
-  <div class="account-floating-bar fixed text-gray-50 bg-gray-900 rounded-2xl z-20 w-fit h-fit p-4 flex justify-center items-center flex-col right-2 top-16 hidden">
-    log in with.
-    <div class="flex gap-2 items-center justify-center">
-     <img src="./images/ninja-hattori.jpeg" alt="" class="w-12 h-12 rounded-full object-cover">
-     <span>ninja@hattori.com</span>
-    </div>
-     <span>joined on 19th August 2025</span>
-  </div>
-
-  <div class="todo-section bg-gray-500 dark:bg-black sm:pt-[80px] sm:pb-28 h-full pb-33 text-gray-50">
-
-    <div class="todo-header sm:px-4 sm:py-4 px-2 py-2 flex gap-2 border-[0.5px] items-center border-gray-600 justify-between">
-      <div class="flex flex-col gap-2">
-        <span class="text-gray-50 md:text-2xl text-xl font-bold">To-Do List</span>
-        <span class="text-sm text-gray-300">1 of 4 tasks completed</span>
-      </div>
-
-      <div class="flex gap-2 items-center">
-        <div class="h-2 w-32 bg-gray-700 rounded-xl">
-          <div class="h-full w-[67%] bg-gray-50 rounded-xl">
-
+          <div class="bg-gray-800 text-gray-50 p-1 rounded-xl text-center">
+            Edit Profile
           </div>
         </div>
-        <div class="text-sm text-gray-300">67%</div>
-      </div>
-      
-    </div>
 
-    <div class="todo-list mt-4 md:mx-14 md:p-6 mx-3 p-2">
+        <div
+        class="grid md:grid-cols-3 grid-cols-1 md:m-8 md:p-8 m-2 p-2 gap-4 text-gray-50">
 
-    <div class="add-task mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl">
-      <div class="flex gap-2 justify-center">
-        <input type="text" placeholder="Add A New Task..." class="bg-gray-400 p-2 rounded-md md:w-[90%] w-[70%]">
-        <span class="md:w-[8%] w-[28%] bg-gray-700 p-2 rounded-md text-sm cursor-pointer hover:bg-gray-600">+ Add Task</span>
-         
-      </div>
-    </div>
-
-    <div class="tasks mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl">
-
-      <div class="flex justify-between items-center">
-        <div class="flex gap-1.5 items-center">
-          <input type="checkbox" name="" id="" class="w-5 h-5 rounded-full border border-black">
-          <span class="line-through">Complete JavaScript Arrays lesson</span>
+        <div class="flex flex-1 p-4 border-[0.5px] border-gray-600 flex-col rounded-2xl">
+           <div>Basic Information</div>
+           <div class="mt-4 flex flex-col gap-2 text-sm text-gray-300 mb-3">
+            <span class="flex gap-2"><img src="./images/mail.svg" alt=""> ninja@hattori.com</span>
+            <span class="flex gap-2"><img src="./images/phone.svg" alt="">+91 829 4206 816 </span>
+            <span class="flex gap-2"><img src="./images/location.svg" alt="">Tokyo,India</span>
+            <span class="flex gap-2"><img src="./images/calendar.svg" alt="">Joined on: 17th Aug 2025</span>
+           </div>
+           <hr>
+           <div class="text-sm text-gray-300 mt-3 mb-3">
+              Aspiring web developer passionate about creating innovative solutions. Currently learning React and modern web technologies.
+           </div>
         </div>
+        <div class="flex flex-1 p-4 border-[0.5px] border-gray-600 flex-col rounded-2xl">
+           <div>Social Links</div>
+           <div class="mt-4 flex flex-col gap-2 text-sm text-gray-300 mb-3">
+            <a href="https://github.com" class="flex gap-2"><img src="./images/github.svg" alt="" class="invert-100">GitHub</a>
+            <a href="https://linkedin.com" class="flex gap-2"><img src="./images/linkedin.svg" alt="" class="invert-100">LinkedIn </a>
+            <a href="https://rishab.online" class="flex gap-2"><img src="./images/browser.svg" alt="" class="invert-100">Personal Website</a>
+           </div>
+
+        </div>
+        <div class="flex flex-1 p-4 border-[0.5px] border-gray-600 flex-col rounded-2xl">
+           <div>Quick Stats</div>
+           <div class="mt-4 flex flex-col gap-2 text-sm text-gray-300 mb-3 w-full">
+            <div class="flex justify-between w-full"><div>Average Skill Level</div><div>61%</div></div>
+            <div class="w-full">
+              <div class="h-3 w-full bg-gray-600 rounded-xl">
+                <div class="w-[61%] h-full bg-gray-50 rounded-xl">
+
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 flex justify-around">
+              <div class="flex flex-col gap-2 justify-center items-center">
+                <span class="text-gray-50 text-lg">10</span>Skill Tracked<span></span>
+              </div>
+              <div class="flex flex-col gap-2 justify-center items-center">
+                <span class="text-gray-50 text-lg"">3</span><span>Achivements</span>
+              </div>
+
+            </div>
+           </div>
+
+        </div>
+
+
+        </div>
+
+        <div class="border-[0.5px] border-gray-600 md:m-8 md:p-8 m-2 p-2 gap-4 text-gray-50 rounded-2xl">
+
+          <div>Recent Achivements</div>
+
+          <div>
+            
+                  <div class="bg-gray-400 rounded-2xl p-5 mt-5">
+        <div class="flex items-center">
+          <div class="flex gap-2 items-center">
+            <img src="./images/target.svg" alt="" class="">
+            <span>JavaScript Fundamentals Completed</span>
+          </div>
+        </div>
+        <div class="text-sm text-gray-300 text-wrap">Successfully completed JavaScript basics course with 95% scoren the fundamentals of web structure and styling</div>
+        <div class="mt-6 flex gap-3 text-sm">
+          <span class="border-[0.5px] border-gray-400 px-1 rounded-xl">11th Aug 2025</span>
+          <span class="bg-blue-800 rounded-xl px-1">course</span>
+        </div>
+
+          </div>
+                  <div class="bg-gray-400 rounded-2xl p-5 mt-5">
+        <div class="flex items-center">
+          <div class="flex gap-2 items-center">
+            <img src="./images/target.svg" alt="" class="">
+            <span>JavaScript Fundamentals Completed</span>
+          </div>
+        </div>
+        <div class="text-sm text-gray-300 text-wrap">Successfully completed JavaScript basics course with 95% scoren the fundamentals of web structure and styling</div>
+        <div class="mt-6 flex gap-3 text-sm">
+          <span class="border-[0.5px] border-gray-400 px-1 rounded-xl">11th Aug 2025</span>
+          <span class="bg-blue-800 rounded-xl px-1">course</span>
+        </div>
+
+          </div>
+                  <div class="bg-gray-400 rounded-2xl p-5 mt-5">
+        <div class="flex items-center">
+          <div class="flex gap-2 items-center">
+            <img src="./images/target.svg" alt="" class="">
+            <span>JavaScript Fundamentals Completed</span>
+          </div>
+        </div>
+        <div class="text-sm text-gray-300 text-wrap">Successfully completed JavaScript basics course with 95% scoren the fundamentals of web structure and styling</div>
+        <div class="mt-6 flex gap-3 text-sm">
+          <span class="border-[0.5px] border-gray-400 px-1 rounded-xl">11th Aug 2025</span>
+          <span class="bg-blue-800 rounded-xl px-1">course</span>
+        </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- profile section ends -->
+
+      <div
+        class="border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-0 px-1 py-0.5 z-10 bg-gray-700 block dark:bg-black sm:hidden text-sm text-gray-50 lower-bar"
+      >
+        <ul class="flex items-center">
+          <li class="flex-1">
+            <a
+              href="../index.html"
+              class="flex flex-col justify-center items-center"
+            >
+              <img src="./images/dashboard.svg" alt="" />
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li class="flex-1 py-0.5">
+            <a
+              href="../chat.html"
+              class="flex flex-col justify-center items-center"
+            >
+              <img src="./images/chat.svg" alt="" />
+              <div>Chat</div>
+            </a>
+          </li>
+          <li class="flex-1">
+            <a
+              href="./todo.html"
+              class="flex flex-col justify-center items-center"
+            >
+              <img src="./images/check_box.svg" alt="" />
+              <div>To-Do</div>
+            </a>
+          </li>
+          <li class="flex-1">
+            <a
+              href="./flowchart.html"
+              class="flex flex-col justify-center items-center"
+            >
+              <img src="./images/flowchart.svg" alt="" />
+              <div>Flowchart</div>
+            </a>
+          </li>
+          <li class="flex-1 button-sidebar cursor-pointer">
+            <div class="flex flex-col justify-center items-center">
+              <img src="./images/person.svg" alt="" />
+              <div>More</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- lower-nav-bar -->
+
+      <div
+        class="mobile-user-bar fixed right-2 bottom-16 left-36 h-32 bg-gray-900 z-40 rounded-3xl p-4 flex flex-col gap-3.5 md:hidden hidden"
+      >
         <div>
-          <img src="./images/delete.svg" alt="" class="cursor-pointer">
+          <a
+            href="./profile.html"
+            class="flex gap-3 text-gray-50 bg-gray-500 rounded-xl"
+          >
+            <img src="./images/person.svg" alt="" />
+            <span>Profile</span>
+          </a>
+        </div>
+        <div class="flex gap-3 text-gray-50 mob-dark-btn">
+          <img src="./images/dark_mode.svg" alt="" class="mob-dark-img" />
+          <span class="mob-dark-txt">Dark Mode</span>
         </div>
       </div>
-
-      <div class="text-sm text-gray-300 ml-7 max-w-2xl">Learn about array methods like map, filter, and reduce</div>
-         
-      <div class="flex gap-3 mt-5 ml-7">
-        <span class="text-sm text-[#EAC452] flex gap-1">
-          <img src="./images/yellow-flag.svg" alt="">
-          Medium
-        </span>
-        <span class="text-sm text-gray-300">14th Aug 2025</span>
-      </div>
-      <!-- red-flag- #EA3323 -high yellow- #EAC452 medium green- #75FB4C low  -->
-
     </div>
-    <div class="tasks mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl">
+    <!-- 85% div ends -->
 
-      <div class="flex justify-between items-center">
-        <div class="flex gap-1.5 items-center">
-          <input type="checkbox" name="" id="" class="w-5 h-5 rounded-full border border-black">
-          <span>Complete JavaScript Arrays lesson</span>
-        </div>
-        <div>
-          <img src="./images/delete.svg" alt="" class="cursor-pointer">
-        </div>
-      </div>
-
-      <div class="text-sm text-gray-300 ml-7 max-w-2xl">Learn about array methods like map, filter, and reduce</div>
-         
-      <div class="flex gap-3 mt-5 ml-7">
-        <span class="text-sm text-[#EA3323] flex gap-1">
-          <img src="./images/red-flag.svg" alt="">
-          High
-        </span>
-        <span class="text-sm text-gray-300">14th Aug 2025</span>
-      </div>
-      <!-- red-flag- #EA3323 -high yellow- #EAC452 medium green- #75FB4C low  -->
-
-    </div>
-    <div class="tasks mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl">
-
-      <div class="flex justify-between items-center">
-        <div class="flex gap-1.5 items-center">
-          <input type="checkbox" name="" id="" class="w-5 h-5 rounded-full border border-black">
-          <span>Complete JavaScript Arrays lesson</span>
-        </div>
-        <div>
-          <img src="./images/delete.svg" alt="" class="cursor-pointer">
-        </div>
-      </div>
-
-      <div class="text-sm text-gray-300 ml-7 max-w-2xl">Learn about array methods like map, filter, and reduce</div>
-         
-      <div class="flex gap-3 mt-5 ml-7">
-        <span class="text-sm text-[#75FB4C] flex gap-1">
-          <img src="./images/green-flag.svg" alt="">
-          Low
-        </span>
-        <span class="text-sm text-gray-300">14th Aug 2025</span>
-      </div>
-      <!-- red-flag- #EA3323 -high yellow- #EAC452 medium green- #75FB4C low  -->
-
-    </div>
-
-     </div> <!-- todo list ends -->
-
-  </div>  <!-- todo section ends -->
-
-  <div class="border-[0.5px] items-center border-gray-600 fixed bottom-0 right-0 left-0 px-1 py-0.5 z-10 bg-gray-700 block dark:bg-black sm:hidden text-sm text-gray-50 lower-bar">
-    <ul class="flex items-center">
-      <li class="flex-1"><a href="../index.html" class="flex flex-col justify-center items-center">
-        <img src="./images/dashboard.svg" alt="">
-        <div>Dashboard</div>
-      </a></li>
-      <li class="flex-1 py-0.5"><a href="../chat.html" class="flex flex-col justify-center items-center">
-         <img src="./images/chat.svg" alt="">
-         <div>Chat</div>
-      </a></li>
-      <li class="flex-1"><a href="./todo.html" class="flex flex-col justify-center items-center bg-gray-500">
-         <img src="./images/check_box.svg" alt="">
-         <div>To-Do</div>
-      </a></li>
-      <li class="flex-1"><a href="./flowchart.html" class="flex flex-col justify-center items-center">
-         <img src="./images/flowchart.svg" alt="">
-         <div>Flowchart</div>
-      </a></li>
-      <li class="flex-1 button-sidebar cursor-pointer"><div class="flex flex-col justify-center items-center">
-          <img src="./images/person.svg" alt="">
-          <div>More</div>
-      </div></li>
-    </ul> 
-  </div> <!-- lower-nav-bar -->
-
-  <div class="mobile-user-bar fixed right-2 bottom-16 left-36 h-32 bg-gray-900 z-40 rounded-3xl p-4 flex flex-col gap-3.5 md:hidden hidden">
-
-    <div>
-      <a href="./profile.html" class="flex gap-3 text-gray-50">
-        <img src="./images/person.svg" alt="">
-        <span>Profile</span>
-      </a>
-      
-    </div>
-    <div class="flex gap-3 text-gray-50 mob-dark-btn">
-      <img src="./images/dark_mode.svg" alt="" class="mob-dark-img">
-      <span class="mob-dark-txt">Dark Mode</span>
-    </div>
-
-  </div>
-
-
-  </div>   <!-- 85% div ends -->
-
-
-  <script src="./account-pannel-inside.js" defer></script>
-  <script src="./chat.js"></script>
-</body>
+    <script src="./account-pannel-inside.js" defer></script>
+    <script src="./chat.js"></script>
+  </body>
 </html>
