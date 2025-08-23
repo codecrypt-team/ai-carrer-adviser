@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const accBtn = document.querySelector(".account-circle");
 const  float = document.querySelector(".account-floating-bar");
 const drkBtn = document.querySelector(".dark-button");
@@ -53,3 +54,4 @@ function darkFucntion() {
      mbDrkImg.src = "./images/dark_mode.svg"
   }
 }
+});
