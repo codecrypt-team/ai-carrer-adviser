@@ -9,12 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let tasks = [];
 
-  tasksLoop();
+  //tasksLoop();
 
   function tasksLoop() {
+     container.replaceChildren();
      tasks.forEach((element) => {
-     displayTask(element);
+       displayTask(element);
   });
+      addEventListeners();
   }
 
   addBtn.addEventListener("click", () => {
@@ -32,10 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     tasks.push(taskObj);
-    container.replaceChildren();
     tasksLoop();
-
-    console.log(tasks);
 
   });
 
@@ -50,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return "green"
     }
   }
+
   function color(priority) {
     if (priority === "Low") {
       return "#75FB4C"
@@ -74,9 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <input
                   type="checkbox"
                   name=""
-                  id=""
+                  data-uID="${data.id}"
                   ${data.completed ? "checked" : ""}
-                  class="w-5 h-5"
+                  class="w-5 h-5 task-check"
                 />
                 <span class="${data.completed ? "line-through" : ""}"
                   >${data.text}</span
@@ -101,36 +101,40 @@ document.addEventListener("DOMContentLoaded", () => {
     `
 
     container.appendChild(div);
-    console.log(data);
-    deletingTask();
   }
 
-  function deletingTask() {
-      if (tasks.length > 0) {
-
+ function addEventListeners() {
+    if (tasks.length === 0) return;
+    //handling delete buttons
     const delBtn = document.querySelectorAll(".delete-button");
-
     delBtn.forEach(element => {
-
      element.addEventListener("click", () => {
      const delId = Number(element.id);
-     const taskToDelete = tasks.filter(task => task.id !== delId);
-     
-     tasks = taskToDelete;
-     container.replaceChildren();
+     tasks = tasks.filter(task => task.id !== delId);
      tasksLoop();
   });
-
     });
 
-  }
-  }
+    //handle checkboxes
+      const taskCheck = document.querySelectorAll(".task-check");
+      taskCheck.forEach((element) => {
+      element.addEventListener("click", () => {
+      let checkId = Number(element.dataset.uid);
+      console.log(checkId);
+
+      let position = tasks.findIndex(task => task.id === checkId);
+      
+      if (position !== -1) {
+        tasks[position].completed = !tasks[position].completed;
+      }
+      tasksLoop();
+      
+    });
+  });
+
+
+ }
   
- deletingTask();
-
-
-
-
 
 });
 
