@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="">
+<html class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -146,49 +146,16 @@
               <input
                 type="text"
                 placeholder="Add A New Task..."
-                class="bg-gray-400 p-2 rounded-md md:w-[90%] w-[70%]"
+                class="bg-gray-400 p-2 rounded-md md:w-[90%] w-[70%] task-input"
               />
               <span
-                class="md:w-[8%] w-[28%] bg-gray-700 p-2 rounded-md text-sm cursor-pointer hover:bg-gray-600"
+                class="md:w-[8%] w-[28%] bg-gray-700 p-2 rounded-md text-sm cursor-pointer hover:bg-gray-600 add-task-button"
                 >+ Add Task</span
               >
             </div>
           </div>
-
-          <div
-            class="tasks mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl"
-          >
-            <div class="flex justify-between items-center">
-              <div class="flex gap-1.5 items-center">
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  class="w-5 h-5 rounded-full border border-black"
-                />
-                <span class="line-through"
-                  >Complete JavaScript Arrays lesson</span
-                >
-              </div>
-              <div>
-                <img src="./images/delete.svg" alt="" class="cursor-pointer" />
-              </div>
-            </div>
-
-            <div class="text-sm text-gray-300 ml-7 max-w-2xl">
-              Learn about array methods like map, filter, and reduce
-            </div>
-
-            <div class="flex gap-3 mt-5 ml-7">
-              <span class="text-sm text-[#EAC452] flex gap-1">
-                <img src="./images/yellow-flag.svg" alt="" />
-                Medium
-              </span>
-              <span class="text-sm text-gray-300">14th Aug 2025</span>
-            </div>
-            <!-- red-flag- #EA3323 -high yellow- #EAC452 medium green- #75FB4C low  -->
-          </div>
-          <div
+<div class="task-lists">
+            <div
             class="tasks mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl"
           >
             <div class="flex justify-between items-center">
@@ -219,37 +186,11 @@
             </div>
             <!-- red-flag- #EA3323 -high yellow- #EAC452 medium green- #75FB4C low  -->
           </div>
-          <div
-            class="tasks mt-4 border-[0.5px] border-gray-600 p-4 rounded-2xl"
-          >
-            <div class="flex justify-between items-center">
-              <div class="flex gap-1.5 items-center">
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  class="w-5 h-5 rounded-full border border-black"
-                />
-                <span>Complete JavaScript Arrays lesson</span>
-              </div>
-              <div>
-                <img src="./images/delete.svg" alt="" class="cursor-pointer" />
-              </div>
-            </div>
+</div>
 
-            <div class="text-sm text-gray-300 ml-7 max-w-2xl">
-              Learn about array methods like map, filter, and reduce
-            </div>
 
-            <div class="flex gap-3 mt-5 ml-7">
-              <span class="text-sm text-[#75FB4C] flex gap-1">
-                <img src="./images/green-flag.svg" alt="" />
-                Low
-              </span>
-              <span class="text-sm text-gray-300">14th Aug 2025</span>
-            </div>
-            <!-- red-flag- #EA3323 -high yellow- #EAC452 medium green- #75FB4C low  -->
-          </div>
+
+          
         </div>
         <!-- todo list ends -->
       </div>
@@ -323,6 +264,6 @@
     <!-- 85% div ends -->
 
     <script src="./account-pannel-inside.js" defer></script>
-    <script src="./chat.js"></script>
+    <script src="./todo.js"></script>
   </body>
 </html>
