@@ -7,9 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const now = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
 
-  let tasks = [];
+  let tasks = JSON.parse(localStorage.getItem('tasksai')) || [];
 
-  //tasksLoop();
+  if (tasks.length > 0) {
+  // If there are saved tasks, render them otherwise it will show hardcoded task in html;
+  tasksLoop();
+}
 
   function tasksLoop() {
      container.replaceChildren();
@@ -18,11 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
       addEventListeners();
   }
+  inputBar.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") {
+      addTask();
+    }
+  })
 
-  addBtn.addEventListener("click", () => {
-    const task = inputBar.value.trim();
+  addBtn.addEventListener("click", addTask);
+
+  function addTask() {
+     const task = inputBar.value.trim();
     if (!task) {return;}
-    inputBar.value = "";
+    
     
     const taskObj = {
       id: Date.now(),
@@ -34,9 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     tasks.push(taskObj);
+    inputBar.value = "";
     tasksLoop();
-
-  });
+    savingLocal();
+  }
 
   function flagColor(priority) {
     if (priority === "Low") {
@@ -112,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
      const delId = Number(element.id);
      tasks = tasks.filter(task => task.id !== delId);
      tasksLoop();
+     savingLocal();
   });
     });
 
@@ -128,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tasks[position].completed = !tasks[position].completed;
       }
       tasksLoop();
+      savingLocal();
       
     });
   });
@@ -135,6 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
  }
   
+ function savingLocal() {
+  localStorage.setItem('tasksai', JSON.stringify(tasks));
+ }
 
 });
 
