@@ -1,3 +1,4 @@
+import { typeWriter } from './utils/typewriter.js';
 document.addEventListener("DOMContentLoaded", () => {
 const userInput = document.querySelector("#user-input")
 const chatContainer = document.querySelector("#chat-container");
@@ -103,7 +104,9 @@ if (chat.type === "user") {
 
 loopingChats();
 
-
+const myText = "Chat With Doraemon Your personal Ai carrer Advisor and guide"
+typeWriter(".chat-header-text", myText, 50);
+chatContainer.scrollTop = chatContainer.scrollHeight;
   
 });
 

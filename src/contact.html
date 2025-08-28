@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <title>Scroll Button</title>
+    <style>
+        body {
+            height: 3000px; /* Make the page very tall to demonstrate scrolling */
+            font-family: sans-serif;
+        }
+        #scrollToBottomBtn {
+            position: fixed; /* Keep the button visible while scrolling */
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        #scrollToTopBtn {
+            position: fixed; /* Keep the button visible while scrolling */
+            bottom: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  
+    <h1>Top of the Page</h1>
+
+    <button id="scrollToBottomBtn">Go to Bottom 👇</button>
+    <button id="scrollToTopBtn">Go to top 👇</button>
+
+    <script>
+        const scrollBtn = document.getElementById('scrollToBottomBtn');
+        const scrollUBtn = document.getElementById('scrollToTopBtn');
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: document.body.scrollHeight, // Scroll to the bottom of the page
+                behavior: 'smooth' // Make the scrolling smooth
+            });
+        });
+
+        scrollUBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top:1,
+            behavior: 'smooth'
+          });
+        });
+    </script>
 </body>
 </html>
