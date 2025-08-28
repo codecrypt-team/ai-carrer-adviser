@@ -13,6 +13,8 @@ const chats = [{
 
 sendBtn.addEventListener("click", () => {
   if(!userInput.value) return;
+  sendBtn.disabled = true;
+  sendBtn.style.opacity = 0.5;
   const userMessage = userInput.value.trim();
 
   const messageObject = {
@@ -37,11 +39,18 @@ function loopingChats() {
 
 function gemniReply() {
     const messageObject = {
-    message: "nice try didy , server is not connected try after some days 😆",
+    message: "...",
     type: "ai",
   }
   chats.push(messageObject);
   loopingChats();
+
+  setTimeout(()=> {
+    messageObject.message = "nice try didy , server is not connected try after some days 😆";
+    loopingChats();
+    sendBtn.disabled = false;
+    sendBtn.style.opacity = 1;
+  }, 1000)
 }
 
 
