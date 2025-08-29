@@ -14,9 +14,7 @@
 ##  🛠️**Tech Stach**
 ### __Frontend__ 
 + **HTML** - WebPage Structure and Content
-+ **CSS**   - Styling and layout
-
-    + **Tailwind(CSS)** - UI component
++ **CSS** (Tailwind)   - Styling and layout
 + **JavaScript** - Interactive and Dynamic Contents
 
 ---
