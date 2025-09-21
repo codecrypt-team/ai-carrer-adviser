@@ -7,10 +7,13 @@ const sendBtn = document.querySelector("#send-button");
 const initialMessage = "Hello, i am doraemon i am your personal carrier guide and adviser just message me what you want to do , whats your interest , your goal and i can design a personalized plan for achieving your goad and help you , so just message me :)"
 
 
-const chats = [{
+
+let chats = [{
   message: initialMessage,
   type: "ai"
 }];
+
+
 
 sendBtn.addEventListener("click", () => {
   if(!userInput.value) return;
@@ -19,16 +22,28 @@ sendBtn.addEventListener("click", () => {
   const userMessage = userInput.value.trim();
 
   const messageObject = {
-    message: userMessage,
-    type: "user",
+   "message": userMessage,
+   "user_id": "rishab"
+  }
+  const fakeMessageObject = {
+    "message": userMessage,
+    "type": "user"
+  }
+
+  const fakeGemniReply = {
+    "message": "...",
+    "type": "ai"
   }
 
 
-  chats.push(messageObject);
+  chats.push(fakeMessageObject);
+  chats.push(fakeGemniReply);
+  gemniReply(messageObject);
   userInput.value = "";
   console.log("message sent successfully", chats);
   loopingChats();
-  gemniReply();
+  sendBtn.disabled = false;
+  sendBtn.style.opacity = 1;
 });
 
 function loopingChats() {
@@ -38,21 +53,34 @@ function loopingChats() {
 });
 }
 
-function gemniReply() {
-    const messageObject = {
-    message: "...",
-    type: "ai",
-  }
-  chats.push(messageObject);
-  loopingChats();
+async function gemniReply(message) {
 
-  setTimeout(()=> {
-    messageObject.message = "nice try didy , server is not connected try after some days 😆";
-    loopingChats();
-    sendBtn.disabled = false;
-    sendBtn.style.opacity = 1;
-  }, 1000)
+  try {
+    const req = await fetch('https://ai-carrer-adviser.onrender.com/chat', {
+      method: "POST",
+      headers: {
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      body: JSON.stringify(message)
+    })
+
+    const res = await req.json()
+      chats = res.chat_history
+      loopingChats();
+  } catch (error) {
+    console.log('something went wrong while fetching', error)
+  }
+
+
 }
+
+let initialFetch = async() => {
+  const req = await fetch('https://ai-carrer-adviser.onrender.com/chat?user_id=rishab')
+  const res = await req.json();
+  chats = res.chat_history
+  loopingChats()
+}
+initialFetch()
 
 
 const displayMessages = (chat) => {
