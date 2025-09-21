@@ -23,7 +23,7 @@ sendBtn.addEventListener("click", () => {
 
   const messageObject = {
    "message": userMessage,
-   "user_id": "rishabs"
+   "user_id": "rishabsi"
   }
   const fakeMessageObject = {
     "message": userMessage,
@@ -75,7 +75,7 @@ async function gemniReply(message) {
 }
 
 let initialFetch = async() => {
-  const req = await fetch('https://ai-carrer-adviser.onrender.com/chat?user_id=rishabs')
+  const req = await fetch('https://ai-carrer-adviser.onrender.com/chat?user_id=rishabsi')
   const res = await req.json();
 
   chats = res.chat_history || [{ message: initialMessage, type: "ai" }];
